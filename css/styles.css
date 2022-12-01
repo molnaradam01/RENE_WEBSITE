@@ -1,1 +1,42 @@
+/* General */
 
+body {
+    background-color: rgb(145, 210, 210);
+}
+
+h1 {
+    font-family: 'Calfine', serif;
+    font-weight: bold;
+    color: #2e6abc;
+}
+
+h2 {
+    font-family: 'Bogart', serif;
+    color: black;
+}
+
+.main {
+    margin: auto;
+    width: 80%;
+    border: 3px solid #2e6abc;
+    padding: 5%;
+    text-align: center;
+}
+
+/* Image */
+
+.circle {
+    background-color: white;
+    margin: auto;
+    border-radius: 50%;
+    border: 3px solid #2e6abc;
+    width: 150px;
+    height: 150px;
+    padding: 25px 25px;
+}
+
+.img {
+    width: 100px;
+    height: auto;
+    /* position: absolute; */
+}

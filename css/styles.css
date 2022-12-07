@@ -1,104 +1,224 @@
 /* General */
 
 body {
-    background-color: white;
+  background-color: white;
 }
 
 h1 {
-    font-family: 'Calfine', serif;
-    font-weight: bold;
-    color: #2e6abc;
+  font-family: "Calfine", serif;
+  font-weight: bold;
+  color: #2e6abc;
+  font-size: 5rem;
 }
 
 h2 {
-    font-family: 'Bogart', serif;
-    color: black;
+  font-family: "Bogart", serif;
+  color: black;
 }
 
 .main {
-    margin: auto;
-    width: 80%;
-    border: 3px solid #2e6abc;
-    padding: 5%;
-    text-align: center;
+  margin: auto;
+  /* border: 3px solid #2e6abc; */
+  padding: 10% 5%;
+  text-align: center;
+}
+
+/* Circles */
+
+.lgcircle1,
+.mdcircle1,
+.smcircle1 {
+  position: absolute;
+
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(4, 29, 52, 0.7) 0%,
+    rgba(4, 29, 52, 0) 100%
+  );
+}
+
+.lgcircle2,
+.mdcircle2,
+.smcircle2 {
+  position: absolute;
+
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(4, 29, 52, 0.5) 0%,
+    rgba(4, 29, 52, 0) 100%
+  );
+}
+
+.lgcircle1,
+.lgcircle2 {
+  width: 600px;
+  height: 600px;
+}
+
+.mdcircle1,
+.mdcircle2 {
+  width: 400px;
+  height: 400px;
+}
+
+.smcircle1,
+.smcircle2 {
+  width: 200px;
+  height: 200px;
+}
+
+.lgcircle1 {
+  top: 1%;
+  left: 1%;
+  animation: floatlg1 6s ease-in-out infinite;
+}
+
+.lgcircle2 {
+  right: 1%;
+  bottom: 1%;
+  animation: floatlg2 4s ease-in-out infinite;
+}
+
+.mdcircle1 {
+  right: 30%;
+  top: 5%;
+  animation: floatmd1 6s ease-in-out infinite;
+}
+
+.mdcircle2 {
+  left: 30%;
+  bottom: 5%;
+  animation: floatmd2 4s ease-in-out infinite;
+}
+
+.smcircle1 {
+  top: 5%;
+  left: 32%;
+  animation: floatsm1 6s ease-in-out infinite;
+}
+
+.smcircle2 {
+  top: 70%;
+  left: 10%;
+  animation: floatsm2 3s ease-in-out infinite;
+}
+
+/* Circle float animations */
+
+@keyframes floatlg1 {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+}
+
+@keyframes floatlg2 {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes floatmd1 {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+}
+
+@keyframes floatmd2 {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes floatsm1 {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+}
+
+@keyframes floatsm2 {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
 }
 
 /* Image */
 
 .circle {
-    background-color: white;
-    margin: 50px auto;
-    border-radius: 50%;
-    border: 3px solid #2e6abc;
-    width: 150px;
-    height: 150px;
-    padding: 25px 25px;
+  background-color: white;
+  margin: auto;
+  border-radius: 50%;
+  /* border: 3px solid #2e6abc; */
+  width: 250px;
+  height: 250px;
+  padding-top: 25px;
 }
 
 .img {
-    width: 100px;
-    height: auto;
-    /* position: absolute; */
+  width: 200px;
+  height: auto;
 }
 
 .heading {
-    display: inline-block;
+  display: inline-block;
 }
 
 /* Dot animation */
 
-.dot1, .dot2, .dot3 {
-    width: 6px;
-    height: 6px;
-    border-radius: 100%;
-    background-color: #2e6abc;
-    position: relative;
-    display: inline-block;
+.dot1,
+.dot2,
+.dot3 {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #2e6abc;
+  position: relative;
+  display: inline-block;
+  animation: fade;
+  animation-iteration-count: infinite;
 }
 
 .dot1 {
-    animation-name: fade;
-    animation-duration: 0.8s;
-    animation-iteration-count: infinite;
+  animation-duration: 0.8s;
 }
 
 .dot2 {
-    animation-name: fade;
-    animation-duration: 0.8s;
-    animation-delay: 0.9s;
-    animation-iteration-count: infinite;
+  animation-duration: 0.8s;
+  animation-delay: 0.9s;
 }
 
 .dot3 {
-    animation-name: fade;
-    animation-duration: 0.8s;
-    animation-delay: 1s;
-    animation-iteration-count: infinite;
+  animation-duration: 0.8s;
+  animation-delay: 1s;
 }
 
 @keyframes fade {
-    0% {
-    width: 6px;
-    height: 6px;
-    border-radius: 100%;
+  0% {
     background-color: #2e6abc;
-    position: relative;
-    display: inline-block;
-    }
-    50% {
-    width: 6px;
-    height: 6px;
-    border-radius: 100%;
+  }
+
+  50% {
     background-color: #ffffff;
-    position: relative;
-    display: inline-block;
-    }
-    100% {
-    width: 6px;
-    height: 6px;
-    border-radius: 100%;
+  }
+
+  100% {
     background-color: #2e6abc;
-    position: relative;
-    display: inline-block;
-    }
+  }
 }

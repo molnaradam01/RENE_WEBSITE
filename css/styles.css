@@ -2,6 +2,7 @@
 
 body {
   background-color: white;
+  overflow: hidden;
 }
 
 h1 {
@@ -51,17 +52,17 @@ h2 {
 
 /* Media-large */
 
-@media screen and (min-width: 1660px) {
+@media screen and (min-width: 992px) {
   .lgcircle1,
   .lgcircle2 {
-    width: 600px;
-    height: 600px;
+    width: 400px;
+    height: 400px;
   }
 
   .mdcircle1,
   .mdcircle2 {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
   }
 
   .smcircle1,
@@ -171,7 +172,7 @@ h2 {
   border-radius: 50%;
   width: 350px;
   height: 350px;
-  padding-top: 25px;
+  /* padding-top: 25px; */
 }
 
 .img {
@@ -228,11 +229,17 @@ h2 {
 
 /* Media-medium */
 
-@media screen and (max-width: 1660px) {
+@media screen and (max-width: 992px) {
   /* H1 */
 
   h1 {
     font-size: 4rem;
+  }
+
+  /* H2 */
+
+  h2 {
+    font-size: 2rem;
   }
 
   /* Circles */
@@ -413,11 +420,17 @@ h2 {
 
 /* Media-small */
 
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 768px) {
   /* H1 */
 
   h1 {
     font-size: 3rem;
+  }
+
+  /* H2 */
+
+  h2 {
+    font-size: 1.5rem;
   }
 
   /* Circles */

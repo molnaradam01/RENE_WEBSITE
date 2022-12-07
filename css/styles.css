@@ -14,11 +14,11 @@ h1 {
 h2 {
   font-family: "Bogart", serif;
   color: black;
+  font-size: 2rem;
 }
 
 .main {
   margin: auto;
-  /* border: 3px solid #2e6abc; */
   padding: 10% 5%;
   text-align: center;
 }
@@ -29,7 +29,7 @@ h2 {
 .mdcircle1,
 .smcircle1 {
   position: absolute;
-
+  z-index: -1;
   background: radial-gradient(
     50% 50% at 50% 50%,
     rgba(4, 29, 52, 0.7) 0%,
@@ -41,7 +41,7 @@ h2 {
 .mdcircle2,
 .smcircle2 {
   position: absolute;
-
+  z-index: -1;
   background: radial-gradient(
     50% 50% at 50% 50%,
     rgba(4, 29, 52, 0.5) 0%,
@@ -49,130 +49,133 @@ h2 {
   );
 }
 
-.lgcircle1,
-.lgcircle2 {
-  width: 600px;
-  height: 600px;
-}
+/* Media-large */
 
-.mdcircle1,
-.mdcircle2 {
-  width: 400px;
-  height: 400px;
-}
-
-.smcircle1,
-.smcircle2 {
-  width: 200px;
-  height: 200px;
-}
-
-.lgcircle1 {
-  top: 1%;
-  left: 1%;
-  animation: floatlg1 6s ease-in-out infinite;
-}
-
-.lgcircle2 {
-  right: 1%;
-  bottom: 1%;
-  animation: floatlg2 4s ease-in-out infinite;
-}
-
-.mdcircle1 {
-  right: 30%;
-  top: 5%;
-  animation: floatmd1 6s ease-in-out infinite;
-}
-
-.mdcircle2 {
-  left: 30%;
-  bottom: 5%;
-  animation: floatmd2 4s ease-in-out infinite;
-}
-
-.smcircle1 {
-  top: 5%;
-  left: 32%;
-  animation: floatsm1 6s ease-in-out infinite;
-}
-
-.smcircle2 {
-  top: 70%;
-  left: 10%;
-  animation: floatsm2 3s ease-in-out infinite;
-}
-
-/* Circle float animations */
-
-@keyframes floatlg1 {
-  0% {
-    transform: translateY(0px);
+@media screen and (min-width: 1660px) {
+  .lgcircle1,
+  .lgcircle2 {
+    width: 600px;
+    height: 600px;
   }
-  50% {
-    transform: translateY(-50px);
-  }
-}
 
-@keyframes floatlg2 {
-  0% {
-    transform: translateY(0px);
+  .mdcircle1,
+  .mdcircle2 {
+    width: 400px;
+    height: 400px;
   }
-  50% {
-    transform: translateY(-30px);
-  }
-}
 
-@keyframes floatmd1 {
-  0% {
-    transform: translateY(0px);
+  .smcircle1,
+  .smcircle2 {
+    width: 200px;
+    height: 200px;
   }
-  50% {
-    transform: translateY(-50px);
-  }
-}
 
-@keyframes floatmd2 {
-  0% {
-    transform: translateY(0px);
+  .lgcircle1 {
+    top: 1%;
+    left: 1%;
+    animation: floatlg1 6s ease-in-out infinite;
   }
-  50% {
-    transform: translateY(-30px);
-  }
-}
 
-@keyframes floatsm1 {
-  0% {
-    transform: translateY(0px);
+  .lgcircle2 {
+    right: 1%;
+    bottom: 1%;
+    animation: floatlg2 4s ease-in-out infinite;
   }
-  50% {
-    transform: translateY(-50px);
-  }
-}
 
-@keyframes floatsm2 {
-  0% {
-    transform: translateY(0px);
+  .mdcircle1 {
+    right: 30%;
+    top: 5%;
+    animation: floatmd1 6s ease-in-out infinite;
   }
-  50% {
-    transform: translateY(-30px);
+
+  .mdcircle2 {
+    left: 30%;
+    bottom: 5%;
+    animation: floatmd2 4s ease-in-out infinite;
+  }
+
+  .smcircle1 {
+    top: 5%;
+    left: 32%;
+    animation: floatsm1 6s ease-in-out infinite;
+  }
+
+  .smcircle2 {
+    top: 70%;
+    left: 10%;
+    animation: floatsm2 3s ease-in-out infinite;
+  }
+
+  /* Circle float animations */
+
+  @keyframes floatlg1 {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-50px);
+    }
+  }
+
+  @keyframes floatlg2 {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+  }
+
+  @keyframes floatmd1 {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-50px);
+    }
+  }
+
+  @keyframes floatmd2 {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+  }
+
+  @keyframes floatsm1 {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-50px);
+    }
+  }
+
+  @keyframes floatsm2 {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
   }
 }
 
 /* Image */
 
 .circle {
-  background-color: white;
+  background-color: transparent;
   margin: auto;
   border-radius: 50%;
-  /* border: 3px solid #2e6abc; */
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
   padding-top: 25px;
 }
 
 .img {
-  width: 200px;
+  width: 300px;
   height: auto;
 }
 
@@ -215,10 +218,381 @@ h2 {
   }
 
   50% {
-    background-color: #ffffff;
+    background-color: transparent;
   }
 
   100% {
     background-color: #2e6abc;
+  }
+}
+
+/* Media-medium */
+
+@media screen and (max-width: 1660px) {
+  /* H1 */
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  /* Circles */
+
+  .lgcircle1,
+  .lgcircle2 {
+    width: 400px;
+    height: 400px;
+  }
+
+  .mdcircle1,
+  .mdcircle2 {
+    width: 200px;
+    height: 200px;
+  }
+
+  .smcircle1,
+  .smcircle2 {
+    width: 100px;
+    height: 100px;
+  }
+
+  .lgcircle1 {
+    top: 1%;
+    left: 1%;
+    animation: floatlg1 6s ease-in-out infinite;
+  }
+
+  .lgcircle2 {
+    right: 1%;
+    bottom: 1%;
+    animation: floatlg2 4s ease-in-out infinite;
+  }
+
+  .mdcircle1 {
+    right: 30%;
+    top: 5%;
+    animation: floatmd1 6s ease-in-out infinite;
+  }
+
+  .mdcircle2 {
+    left: 30%;
+    bottom: 5%;
+    animation: floatmd2 4s ease-in-out infinite;
+  }
+
+  .smcircle1 {
+    top: 5%;
+    left: 32%;
+    animation: floatsm1 6s ease-in-out infinite;
+  }
+
+  .smcircle2 {
+    top: 70%;
+    left: 10%;
+    animation: floatsm2 3s ease-in-out infinite;
+  }
+
+  /* Circle float animations */
+
+  @keyframes floatlg1 {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-40px);
+    }
+  }
+
+  @keyframes floatlg2 {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes floatmd1 {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-40px);
+    }
+  }
+
+  @keyframes floatmd2 {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes floatsm1 {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-40px);
+    }
+  }
+
+  @keyframes floatsm2 {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  /* Image */
+
+  .circle {
+    background-color: transparent;
+    margin: auto;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    padding-top: 25px;
+  }
+
+  .img {
+    width: 200px;
+    height: auto;
+  }
+
+  .heading {
+    display: inline-block;
+  }
+
+  /* Dot animation */
+
+  .dot1,
+  .dot2,
+  .dot3 {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: #2e6abc;
+    position: relative;
+    display: inline-block;
+    animation: fade;
+    animation-iteration-count: infinite;
+  }
+
+  .dot1 {
+    animation-duration: 0.8s;
+  }
+
+  .dot2 {
+    animation-duration: 0.8s;
+    animation-delay: 0.9s;
+  }
+
+  .dot3 {
+    animation-duration: 0.8s;
+    animation-delay: 1s;
+  }
+
+  @keyframes fade {
+    0% {
+      background-color: #2e6abc;
+    }
+
+    50% {
+      background-color: transparent;
+    }
+
+    100% {
+      background-color: #2e6abc;
+    }
+  }
+}
+
+/* Media-small */
+
+@media screen and (max-width: 1140px) {
+  /* H1 */
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  /* Circles */
+
+  .lgcircle1,
+  .lgcircle2 {
+    width: 250px;
+    height: 250px;
+  }
+
+  .mdcircle1,
+  .mdcircle2 {
+    width: 125px;
+    height: 125px;
+  }
+
+  .smcircle1,
+  .smcircle2 {
+    width: 75px;
+    height: 75px;
+  }
+
+  .lgcircle1 {
+    top: 1%;
+    left: 1%;
+    animation: floatlg1 6s ease-in-out infinite;
+  }
+
+  .lgcircle2 {
+    right: 1%;
+    bottom: 1%;
+    animation: floatlg2 4s ease-in-out infinite;
+  }
+
+  .mdcircle1 {
+    right: 30%;
+    top: 5%;
+    animation: floatmd1 6s ease-in-out infinite;
+  }
+
+  .mdcircle2 {
+    left: 30%;
+    bottom: 5%;
+    animation: floatmd2 4s ease-in-out infinite;
+  }
+
+  .smcircle1 {
+    top: 5%;
+    left: 32%;
+    animation: floatsm1 6s ease-in-out infinite;
+  }
+
+  .smcircle2 {
+    top: 70%;
+    left: 10%;
+    animation: floatsm2 3s ease-in-out infinite;
+  }
+
+  /* Circle float animations */
+
+  @keyframes floatlg1 {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+  }
+
+  @keyframes floatlg2 {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-150px);
+    }
+  }
+
+  @keyframes floatmd1 {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+  }
+
+  @keyframes floatmd2 {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+  }
+
+  @keyframes floatsm1 {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+  }
+
+  @keyframes floatsm2 {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+  }
+
+  /* Image */
+
+  .circle {
+    background-color: transparent;
+    margin: auto;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    padding-top: 25px;
+  }
+
+  .img {
+    width: 175px;
+    height: auto;
+  }
+
+  .heading {
+    display: inline-block;
+    margin: 20px auto;
+  }
+
+  /* Dot animation */
+
+  .dot1,
+  .dot2,
+  .dot3 {
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background-color: #2e6abc;
+    position: relative;
+    display: inline-block;
+    animation: fade;
+    animation-iteration-count: infinite;
+  }
+
+  .dot1 {
+    animation-duration: 0.8s;
+  }
+
+  .dot2 {
+    animation-duration: 0.8s;
+    animation-delay: 0.9s;
+  }
+
+  .dot3 {
+    animation-duration: 0.8s;
+    animation-delay: 1s;
+  }
+
+  @keyframes fade {
+    0% {
+      background-color: #2e6abc;
+    }
+
+    50% {
+      background-color: transparent;
+    }
+
+    100% {
+      background-color: #2e6abc;
+    }
   }
 }

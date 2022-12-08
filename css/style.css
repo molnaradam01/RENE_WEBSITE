@@ -20,7 +20,7 @@ h2 {
 
 .main {
   margin: auto;
-  padding: 10% 5%;
+  width: 100%;
   text-align: center;
 }
 
@@ -50,9 +50,193 @@ h2 {
   );
 }
 
+/* Media-extralarge */
+
+@media screen and (min-width: 1200px) {
+  .main {
+    padding: 5% 5%;
+  }
+
+  .lgcircle1,
+  .lgcircle2 {
+    width: 800px;
+    height: 800px;
+  }
+
+  .mdcircle1,
+  .mdcircle2 {
+    width: 400px;
+    height: 400px;
+  }
+
+  .smcircle1,
+  .smcircle2 {
+    width: 300px;
+    height: 300px;
+  }
+
+  .lgcircle1 {
+    top: 1%;
+    left: 1%;
+    animation: floatlg1 5s ease-in-out infinite;
+  }
+
+  .lgcircle2 {
+    right: 1%;
+    bottom: 1%;
+    animation: floatlg2 4s ease-in-out infinite;
+  }
+
+  .mdcircle1 {
+    right: 30%;
+    top: 5%;
+    animation: floatmd1 5.5s ease-in-out infinite;
+  }
+
+  .mdcircle2 {
+    left: 30%;
+    bottom: 5%;
+    animation: floatmd2 4s ease-in-out infinite;
+  }
+
+  .smcircle1 {
+    top: 5%;
+    left: 32%;
+    animation: floatsm1 4.5s ease-in-out infinite;
+  }
+
+  .smcircle2 {
+    top: 70%;
+    left: 10%;
+    animation: floatsm2 4s ease-in-out infinite;
+  }
+
+  /* Circle float animations */
+
+  @keyframes floatlg1 {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-70px);
+    }
+  }
+
+  @keyframes floatlg2 {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-50px);
+    }
+  }
+
+  @keyframes floatmd1 {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-70px);
+    }
+  }
+
+  @keyframes floatmd2 {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-60px);
+    }
+  }
+
+  @keyframes floatsm1 {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-50px);
+    }
+  }
+
+  @keyframes floatsm2 {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-70px);
+    }
+  }
+}
+
+/* Image */
+
+/* .image {
+  background-color: transparent;
+  margin: auto;
+  border-radius: 50%;
+  width: 25%;
+  height: auto;
+} */
+
+.img {
+  max-width: 30%;
+  height: auto;
+}
+
+.heading {
+  display: inline-block;
+}
+
+/* Dot animation */
+
+.dot1,
+.dot2,
+.dot3 {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #2e6abc;
+  position: relative;
+  display: inline-block;
+  animation: fade;
+  animation-iteration-count: infinite;
+}
+
+.dot1 {
+  animation-duration: 0.8s;
+}
+
+.dot2 {
+  animation-duration: 0.8s;
+  animation-delay: 0.9s;
+}
+
+.dot3 {
+  animation-duration: 0.8s;
+  animation-delay: 1s;
+}
+
+@keyframes fade {
+  0% {
+    background-color: #2e6abc;
+  }
+
+  50% {
+    background-color: transparent;
+  }
+
+  100% {
+    background-color: #2e6abc;
+  }
+}
+
 /* Media-large */
 
 @media screen and (min-width: 992px) {
+  .main {
+    padding: 5% 5%;
+  }
+
   .lgcircle1,
   .lgcircle2 {
     width: 400px;
@@ -166,17 +350,16 @@ h2 {
 
 /* Image */
 
-.circle {
+/* .image {
   background-color: transparent;
   margin: auto;
   border-radius: 50%;
-  width: 350px;
-  height: 350px;
-  /* padding-top: 25px; */
-}
+  width: 25%;
+  height: auto;
+} */
 
 .img {
-  width: 300px;
+  max-width: 30%;
   height: auto;
 }
 
@@ -229,7 +412,7 @@ h2 {
 
 /* Media-medium */
 
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 768px) {
   /* H1 */
 
   h1 {
@@ -356,17 +539,17 @@ h2 {
 
   /* Image */
 
-  .circle {
+  /* .image {
     background-color: transparent;
     margin: auto;
     border-radius: 50%;
-    width: 250px;
-    height: 250px;
+    width: 25%;
+    height: auto;
     padding-top: 25px;
-  }
+  } */
 
   .img {
-    width: 200px;
+    max-width: 40%;
     height: auto;
   }
 
@@ -420,7 +603,7 @@ h2 {
 
 /* Media-small */
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 576px) {
   /* H1 */
 
   h1 {
@@ -547,17 +730,17 @@ h2 {
 
   /* Image */
 
-  .circle {
+  /* .image {
     background-color: transparent;
     margin: auto;
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 25%;
+    height: auto;
     padding-top: 25px;
-  }
+  } */
 
   .img {
-    width: 175px;
+    max-width: 50%;
     height: auto;
   }
 

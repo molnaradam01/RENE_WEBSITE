@@ -1,9 +1,9 @@
-/* Media-medium */
+body {
+  background-color: #ffffff;
+  overflow: hidden;
+}
 
-@media screen and (min-width: 768px) {
-  /* H1 */
-
-  h1 {
+h1 {
     font-size: 4rem;
   }
 
@@ -23,14 +23,14 @@
 
   .mdcircle1,
   .mdcircle2 {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
   }
 
   .smcircle1,
   .smcircle2 {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
   }
 
   .lgcircle1 {
@@ -46,26 +46,26 @@
   }
 
   .mdcircle1 {
-    right: 30%;
-    top: 5%;
+    bottom: 1%;
+    left: 1%;
     animation: floatmd1 6s ease-in-out infinite;
   }
 
   .mdcircle2 {
-    left: 30%;
-    bottom: 5%;
+    top: 10%;
+    right: 5%;
     animation: floatmd2 4s ease-in-out infinite;
   }
 
   .smcircle1 {
     top: 5%;
-    left: 32%;
+    left: 45%;
     animation: floatsm1 6s ease-in-out infinite;
   }
 
   .smcircle2 {
-    top: 70%;
-    left: 10%;
+    top: 50%;
+    left: 25%;
     animation: floatsm2 3s ease-in-out infinite;
   }
 
@@ -76,7 +76,7 @@
       transform: translateY(0px);
     }
     50% {
-      transform: translateY(-40px);
+      transform: translateY(-60px);
     }
   }
 
@@ -85,7 +85,7 @@
       transform: translateY(0px);
     }
     50% {
-      transform: translateY(-20px);
+      transform: translateY(-29px);
     }
   }
 
@@ -94,7 +94,7 @@
       transform: translateY(0px);
     }
     50% {
-      transform: translateY(-40px);
+      transform: translateY(-45px);
     }
   }
 
@@ -103,7 +103,7 @@
       transform: translateY(0px);
     }
     50% {
-      transform: translateY(-20px);
+      transform: translateY(-39px);
     }
   }
 
@@ -128,11 +128,16 @@
   /* Image */
 
   .img {
-    margin-top: 40%;
+    margin-top: 200px;
     max-width: 40%;
   }
 
   .heading {
+    display: inline-block;
+    margin: 30px auto 10px;
+  }
+
+  .name {
     display: inline-block;
   }
 
@@ -141,8 +146,8 @@
   .dot1,
   .dot2,
   .dot3 {
-    width: 8px;
-    height: 8px;
+    width: 7px;
+    height: 7px;
     border-radius: 100%;
     background-color: #2e6abc;
     position: relative;
@@ -178,4 +183,3 @@
       background-color: #2e6abc;
     }
   }
-}

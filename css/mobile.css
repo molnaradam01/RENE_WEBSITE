@@ -4,16 +4,11 @@ body {
 }
 
 h1 {
-  font-family: "Calfine", serif;
-  font-weight: bold;
-  color: #2e6abc;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 h2 {
-  font-family: "Bogart", serif;
-  color: black;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .main {
@@ -81,7 +76,7 @@ h2 {
 }
 
 .mdcircle1 {
-  left: 15%;
+  left: 7%;
   bottom: 5%;
   animation: floatmd1 6s ease-in-out infinite;
 }
@@ -93,7 +88,7 @@ h2 {
 }
 
 .smcircle1 {
-  top: 50%;
+  top: 40%;
   left: 3%;
   animation: floatsm1 6s ease-in-out infinite;
 }
@@ -163,8 +158,8 @@ h2 {
 /* Image */
 
 .img {
-  margin-top: 40%;
-  max-width: 40%;
+  margin-top: 200px;
+  max-width: 50%;
 }
 
 .heading {
@@ -181,8 +176,8 @@ h2 {
 .dot1,
 .dot2,
 .dot3 {
-  width: 5px;
-  height: 5px;
+  width: 6px;
+  height: 6px;
   border-radius: 100%;
   background-color: #2e6abc;
   position: relative;

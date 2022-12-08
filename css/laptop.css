@@ -1,129 +1,144 @@
-/* Media-large */
+body {
+  background-color: white;
+  overflow: hidden;
+}
 
-@media screen and (min-width: 992px) {
-  .main {
-    padding: 5% 5%;
+h1 {
+  font-size: 4rem;
+  background-color: aqua;
+}
+
+/* H2 */
+
+h2 {
+  font-size: 2rem;
+}
+
+/* Circles */
+
+.lgcircle1,
+.lgcircle2 {
+  width: 400px;
+  height: 400px;
+}
+
+.mdcircle1,
+.mdcircle2 {
+  width: 300px;
+  height: 300px;
+}
+
+.smcircle1,
+.smcircle2 {
+  width: 150px;
+  height: 150px;
+}
+
+.lgcircle1 {
+  top: 1%;
+  left: 1%;
+  animation: floatlg1 6s ease-in-out infinite;
+}
+
+.lgcircle2 {
+  right: 1%;
+  bottom: 1%;
+  animation: floatlg2 4s ease-in-out infinite;
+}
+
+.mdcircle1 {
+  bottom: 1%;
+  left: 1%;
+  animation: floatmd1 6s ease-in-out infinite;
+}
+
+.mdcircle2 {
+  top: 10%;
+  right: 5%;
+  animation: floatmd2 4s ease-in-out infinite;
+}
+
+.smcircle1 {
+  top: 5%;
+  left: 45%;
+  animation: floatsm1 6s ease-in-out infinite;
+}
+
+.smcircle2 {
+  top: 50%;
+  left: 25%;
+  animation: floatsm2 3s ease-in-out infinite;
+}
+
+/* Circle float animations */
+
+@keyframes floatlg1 {
+  0% {
+    transform: translateY(0px);
   }
-
-  .lgcircle1,
-  .lgcircle2 {
-    width: 400px;
-    height: 400px;
+  50% {
+    transform: translateY(-60px);
   }
+}
 
-  .mdcircle1,
-  .mdcircle2 {
-    width: 300px;
-    height: 300px;
+@keyframes floatlg2 {
+  0% {
+    transform: translateY(0px);
   }
-
-  .smcircle1,
-  .smcircle2 {
-    width: 200px;
-    height: 200px;
+  50% {
+    transform: translateY(-29px);
   }
+}
 
-  .lgcircle1 {
-    top: 1%;
-    left: 1%;
-    animation: floatlg1 6s ease-in-out infinite;
+@keyframes floatmd1 {
+  0% {
+    transform: translateY(0px);
   }
-
-  .lgcircle2 {
-    right: 1%;
-    bottom: 1%;
-    animation: floatlg2 4s ease-in-out infinite;
+  50% {
+    transform: translateY(-45px);
   }
+}
 
-  .mdcircle1 {
-    right: 30%;
-    top: 5%;
-    animation: floatmd1 6s ease-in-out infinite;
+@keyframes floatmd2 {
+  0% {
+    transform: translateY(0px);
   }
-
-  .mdcircle2 {
-    left: 30%;
-    bottom: 5%;
-    animation: floatmd2 4s ease-in-out infinite;
+  50% {
+    transform: translateY(-39px);
   }
+}
 
-  .smcircle1 {
-    top: 5%;
-    left: 32%;
-    animation: floatsm1 6s ease-in-out infinite;
+@keyframes floatsm1 {
+  0% {
+    transform: translateY(0px);
   }
-
-  .smcircle2 {
-    top: 70%;
-    left: 10%;
-    animation: floatsm2 3s ease-in-out infinite;
+  50% {
+    transform: translateY(-40px);
   }
+}
 
-  /* Circle float animations */
-
-  @keyframes floatlg1 {
-    0% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(-50px);
-    }
+@keyframes floatsm2 {
+  0% {
+    transform: translateY(0px);
   }
-
-  @keyframes floatlg2 {
-    0% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(-30px);
-    }
-  }
-
-  @keyframes floatmd1 {
-    0% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(-50px);
-    }
-  }
-
-  @keyframes floatmd2 {
-    0% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(-30px);
-    }
-  }
-
-  @keyframes floatsm1 {
-    0% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(-50px);
-    }
-  }
-
-  @keyframes floatsm2 {
-    0% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(-30px);
-    }
+  50% {
+    transform: translateY(-20px);
   }
 }
 
 /* Image */
 
 .img {
-  max-width: 30%;
-  height: auto;
+  margin-top: 100px;
+  max-width: 40%;
 }
 
 .heading {
+  display: inline-block;
+  margin: 30px auto 10px;
+}
+
+.name {
   display: inline-block;
 }
 
@@ -132,8 +147,8 @@
 .dot1,
 .dot2,
 .dot3 {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   border-radius: 100%;
   background-color: #2e6abc;
   position: relative;

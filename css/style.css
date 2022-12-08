@@ -1,3 +1,11 @@
+@import "mobile.css" screen and (max-width: 767.98px);
+
+@import "tablet.css" screen and (min-width: 768px);
+
+@import "laptop.css" screen and (min-width: 992px);
+
+@import "desktop.css" screen and (min-width: 1200px);
+
 /* General */
 
 body {
@@ -9,18 +17,16 @@ h1 {
   font-family: "Calfine", serif;
   font-weight: bold;
   color: #2e6abc;
-  font-size: 5rem;
 }
 
 h2 {
   font-family: "Bogart", serif;
   color: black;
-  font-size: 2rem;
 }
 
 .main {
   margin: auto;
-  width: 100%;
+  max-width: 100%;
   text-align: center;
 }
 
@@ -49,11 +55,3 @@ h2 {
     rgba(4, 29, 52, 0) 100%
   );
 }
-
-@import "mobile.css" screen and (max-width: 767.98px);
-
-@import "tablet.css" screen and (max-width: 991.98px);
-
-@import "laptop.css" screen and (max-width: 1199.98px);
-
-@import "desktop.css" screen and (min-width: 1200);

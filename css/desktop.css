@@ -17,20 +17,20 @@ h2 {
 
 .lgcircle1,
 .lgcircle2 {
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
 }
 
 .mdcircle1,
 .mdcircle2 {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
 }
 
 .smcircle1,
 .smcircle2 {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
 }
 
 .lgcircle1 {
@@ -146,8 +146,8 @@ h2 {
 .dot1,
 .dot2,
 .dot3 {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   border-radius: 100%;
   background-color: #2e6abc;
   position: relative;

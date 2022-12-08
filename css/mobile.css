@@ -89,7 +89,7 @@ h2 {
 
 .smcircle1 {
   top: 40%;
-  left: 3%;
+  left: 1%;
   animation: floatsm1 6s ease-in-out infinite;
 }
 
@@ -158,7 +158,7 @@ h2 {
 /* Image */
 
 .img {
-  margin-top: 200px;
+  margin-top: 175px;
   max-width: 50%;
 }
 
